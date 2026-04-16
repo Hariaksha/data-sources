@@ -19,8 +19,6 @@ Each dataset entry answers four questions:
 
 ---
 
-## Repository Structure
-
 ## 🗂️ Repository Structure
 
 - `data-catalog/`
