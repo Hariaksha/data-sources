@@ -26,12 +26,16 @@ Each dataset entry answers four questions:
 - `data-catalog/`
   - `README.md` — master index & quick-reference table
   - `catalog/` — one `.md` file per dataset
-    - `conflict/` → `acled.md`, ...
-    - `climate/` → `nasa-wildfire-firms.md`, `net-zero-tracker.md`, ...
-    - `surveys/` → `gallup-world-poll.md`, ...
+    - `conflict/` → `acled.md`, `global-peace-index.md`, `global-terrorism-index.md`, `organized-crime-index.md`, `acled-conflict-index.md`, `climate-conflict-vulnerability-index.md`, `global-militarization-index.md`
+    - `climate/` → `nasa-wildfire-firms.md`, `net-zero-tracker.md`, `environmental-performance-index.md`, `global-sustainable-competitiveness-index.md`
+    - `surveys/` → `gallup-world-poll.md`
+    - `governance/` → `fragile-states-index.md`, `state-resilience-index.md`, `corruption-perceptions-index.md`, `global-corruption-barometer.md`, `freedom-house.md`, `democracy-index.md`, `world-press-freedom-index.md`, `academic-freedom-index.md`
+    - `development/` → `human-development-index.md`, `multidimensional-poverty-index.md`, `gender-development-index.md`, `social-institutions-gender-index.md`, `world-inequality-report.md`, `global-health-security-index.md`, `happiness-world-report.md`, `good-country-index.md`, `world-giving-index.md`, `us-news-best-countries.md`, `formal-bilateral-influence-capacity-index.md`, `henley-private-wealth-migration.md`
+    - `reference/` → `languages.md`
   - `data/` — small samples & derived files only (< 5 MB)
   - `scripts/` — download, API fetch, and cleaning scripts
 
+> **Note on data storage:** Raw files (`.csv`, `.dta`, `.xlsx`) are intentionally **not** committed here unless tiny. Large files are excluded via `.gitignore`. The value of this repo is the metadata, not the data itself.
 > **Note on data storage:** Raw files (`.csv`, `.dta`, `.xlsx`) are intentionally **not** committed here unless tiny. Large files are excluded via `.gitignore`. The value of this repo is the metadata, not the data itself.
 
 ---
