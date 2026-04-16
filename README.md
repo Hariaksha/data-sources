@@ -36,7 +36,7 @@ data-catalog/
 │ └── [theme]/
 │ └── [dataset].md
 │
-├── data/ ← Small samples or derived files only
+├── data/ ← Small samples & derived files only (< 5 MB)
 │ └── .gitkeep
 │
 └── scripts/ ← Download, API fetch, and cleaning scripts
