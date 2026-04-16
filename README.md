@@ -21,29 +21,18 @@ Each dataset entry answers four questions:
 
 ## Repository Structure
 
-data-catalog/
-│
-├── README.md ← You are here — master index
-│
-├── catalog/ ← One .md file per dataset
-│ ├── conflict/
-│ │ └── acled.md
-│ ├── climate/
-│ │ ├── nasa-wildfire-firms.md
-│ │ └── net-zero-tracker.md
-│ ├── surveys/
-│ │ └── gallup-world-poll.md
-│ └── [theme]/
-│ └── [dataset].md
-│
-├── data/ ← Small samples & derived files only (< 5 MB)
-│ └── .gitkeep
-│
-└── scripts/ ← Download, API fetch, and cleaning scripts
-└── .gitkeep
+## 🗂️ Repository Structure
 
+- `data-catalog/`
+  - `README.md` — master index & quick-reference table
+  - `catalog/` — one `.md` file per dataset
+    - `conflict/` → `acled.md`, ...
+    - `climate/` → `nasa-wildfire-firms.md`, `net-zero-tracker.md`, ...
+    - `surveys/` → `gallup-world-poll.md`, ...
+  - `data/` — small samples & derived files only (< 5 MB)
+  - `scripts/` — download, API fetch, and cleaning scripts
 
-> **Note on data storage:** Raw data files (`.csv`, `.dta`, `.xlsx`, etc.) are intentionally **not** committed to this repo unless they are tiny samples. Large files are excluded via `.gitignore`. The value of this repo is the metadata, not the data itself.
+> **Note on data storage:** Raw files (`.csv`, `.dta`, `.xlsx`) are intentionally **not** committed here unless tiny. Large files are excluded via `.gitignore`. The value of this repo is the metadata, not the data itself.
 
 ---
 
