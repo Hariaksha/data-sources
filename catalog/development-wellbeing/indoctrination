@@ -1,0 +1,59 @@
+# Varieties of Indoctrination (V-Indoc) Dataset
+
+## Overview
+
+The Varieties of Indoctrination (V-Indoc) dataset is a global dataset on the politicization of education and the media. It is created using the V-Dem infrastructure and draws on information provided by 760 country experts. The dataset presents novel indices and indicators on indoctrination efforts in education and the media around the world.
+
+## Key Details
+
+| Field | Details |
+|---|---|
+| **Full Name** | Varieties of Indoctrination (V-Indoc) |
+| **Host Institution** | Project DEMED, University of Glasgow (in collaboration with V-Dem Institute) |
+| **Coverage** | 160 countries |
+| **Time Period** | 1945–2021 |
+| **Unit of Analysis** | Country-year |
+| **Expert Respondents** | 760 country experts |
+| **Public Launch** | February 28, 2023 |
+
+## Data Content
+
+The dataset covers indoctrination efforts across two main domains:
+
+- **Education**: Politicization of curricula, teaching, and educational institutions
+- **Media**: Politicization of media content, ownership, and regulation
+
+In addition to original V-Indoc indicators, the dataset provides harmonized variables from existing education and media data sources (e.g., World Bank, UNESCO) to offer comprehensive coverage on these topics.
+
+## Methodology
+
+V-Indoc is built on the V-Dem (Varieties of Democracy) infrastructure, using a structured expert survey methodology. Country experts provide ratings that are aggregated using Bayesian measurement models to produce latent indices and indicators. The dataset extends the V-Dem framework specifically to capture indoctrination-related phenomena.
+
+## Access & Downloads
+
+- **Dataset**: Available via the Project DEMED / University of Glasgow website
+  - URL: https://www.gla.ac.uk/research/az/democracyresearch/dataandmethods/v-indocdataset/downloadthedata/
+- **Codebook**: Available on SSRN
+  - DOI: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4726306
+- **Paper**: Published in *Perspectives on Politics*
+  - DOI: https://doi.org/10.1017/S1537592723002967
+- **Interactive Explorer (Shiny App)**: https://www.gla.ac.uk/research/az/democracyresearch/dataandmethods/v-indocdataset/explorethedata/
+- **Launch Webinar**: https://youtu.be/sNzBCqktS8I
+
+## Related Resources
+
+- **Project DEMED**: https://www.gla.ac.uk/research/az/democracyresearch/
+- **V-Dem Institute**: https://www.v-dem.net/
+- **GitHub (demspaces)**: https://github.com/vdeminstitute/demspaces
+
+## Citation
+
+Please refer to the published paper and codebook for citation guidance:
+
+> Maerz, S. F., et al. (2023). *Varieties of Indoctrination*. *Perspectives on Politics*. https://doi.org/10.1017/S1537592723002967
+
+## Notes
+
+- The dataset facilitates empirical examination of the causes and consequences of indoctrination globally and over time.
+- The launch webinar (February 28, 2023) was attended by 171 individuals.
+- Presentation slides from the launch are available via [Dropbox](https://www.dropbox.com/s/xsyvbl5syynv4gc/WP1_Launch_Slides.pdf).
