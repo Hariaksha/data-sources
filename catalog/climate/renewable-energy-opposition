@@ -1,0 +1,62 @@
+# Opposition Report: Renewable Energy Facility Opposition in the United States
+
+**Theme:** Climate & Energy Policy / Governance
+**Source:** Sabin Center for Climate Change Law, Columbia University (in partnership with Prof. David E. Adelman, UT Austin)
+**Geographic Coverage:** United States (all 50 states, county and municipal level)
+**Time Coverage:** ~2010–present (updated monthly; latest report covers through December 31, 2024)
+**Unit of Observation:** Restriction (state or local ordinance) or Contested Project
+**Format:** Web (interactive map), downloadable CSV
+**Access:** [oppositionreport.org](https://oppositionreport.org/reports/current/) | [Restriction data CSV](https://oppositionreport.org/wp-load.php?security_token=88698d2c95a52665&export_id=6&action=get_data) | [Contested Projects CSV](https://oppositionreport.org/wp-load.php?security_token=ba2fe335207de61e&export_id=4&action=get_data) | [June 2025 Report](https://scholarship.law.columbia.edu/sabin_climate_change/251/)
+**License:** Free to access
+**Last Verified:** April 2026
+
+---
+
+## Description
+
+Tracks state and local opposition to utility-scale renewable energy siting in the
+United States across two datasets: (1) **Restrictions** — state and local laws/ordinances
+that ban, cap, or severely limit the siting and deployment of wind, solar, and battery
+storage projects; and (2) **Contested Projects** — individual renewable energy projects that
+have faced organized opposition, including lawsuits, petitions, and administrative
+interventions. As of the June 2025 edition, the report identified restrictions in at least
+459 counties and municipalities across 44 states, 16 states with significant state-level
+restrictions, and 498 contested projects across 49 states. Updated monthly.
+Relevant to research on renewable energy transition, political economy of climate policy,
+and local opposition to infrastructure siting.
+
+## Key Variables
+
+**Restriction Data**
+
+| Variable | Description |
+|----------|-------------|
+| State | U.S. state |
+| Jurisdiction | County or municipality name |
+| Restriction Type | Category (ban, cap, setback, noise limit, height limit, viewshed, etc.) |
+| Energy Type | Wind, Solar, Storage, Transmission |
+| Level | State-level or Local |
+| Status | Currently in effect or expired |
+
+**Contested Projects Data**
+
+| Variable | Description |
+|----------|-------------|
+| Project Name | Name of the renewable energy project |
+| State | U.S. state |
+| County | County of project location |
+| Energy Type | Wind, Solar, Storage, Transmission |
+| Opposition Type | Lawsuits, petitions, opposition groups, administrative intervention |
+| Outcome | Delayed, scaled down, cancelled, or ongoing |
+
+## Potential Research Questions
+
+- Does local opposition to renewables correlate with political or socioeconomic characteristics of counties?
+- How do state-level restrictions affect renewable capacity deployment over time?
+- What is the relationship between NIMBY opposition and clean energy transition outcomes?
+
+## Merge Keys & Compatibility
+
+- Merge **Contested Projects** with **EIA electricity generation data** via state/county and project type for capacity impact analysis
+- Merge **Restrictions** with **Census** or **ACS** data via county FIPS code for demographic correlates of opposition
+- Combine with **Fragile States Index** or **Freedom House** on state-level governance indicators
