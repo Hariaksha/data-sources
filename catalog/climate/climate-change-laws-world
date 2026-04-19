@@ -1,0 +1,73 @@
+# Climate Change Laws of the World (CCLW)
+
+**Theme:** Governance & Climate Law / Climate Policy
+**Source:** Grantham Research Institute on Climate Change and the Environment, LSE (in partnership with Climate Policy Radar and Sabin Center, Columbia Law School)
+**Geographic Coverage:** Global (196 UNFCCC parties + EU + non-UN territories including Taiwan, Palestine, Western Sahara; 200+ jurisdictions total)
+**Time Coverage:** ~1947–present (continuously updated; methodology last updated August 2024)
+**Unit of Observation:** Law, policy, or UNFCCC submission (national level)
+**Format:** Web (interactive search), downloadable CSV
+**Access:** [climate-laws.org](https://climate-laws.org/) |
+[Download whole database (CSV)](https://climate-laws.org/search)
+**License:** Free to access; see [Terms of Use](https://climate-laws.org/terms-of-use)
+**Last Verified:** April 2026
+
+---
+
+## Description
+
+The most comprehensive global database of national-level climate change laws, policies,
+and UNFCCC submissions, covering 7,000+ documents across 200+ jurisdictions. Built on
+over a decade of data collection by the Grantham Research Institute at LSE and the Sabin
+Center, now powered by NLP and machine learning via Climate Policy Radar. Covers three
+document categories: (1) **Laws** — legislation with full legal force passed through a
+legislature; (2) **Policies** — current governmental policy objectives set by executive
+bodies; and (3) **UNFCCC Submissions** — NDCs, National Communications, Adaptation
+Communications, IPCC reports, and Global Stocktake submissions (2,700+). Scope includes
+mitigation, adaptation, loss and damage, disaster risk management, and low-carbon
+transition across all major economic sectors. Relevant to research on climate governance,
+regulatory ambition, political economy of climate policy, and cross-country comparative
+analysis of climate legislation.
+
+## Key Variables
+
+- `Title` — name of the law, policy, or submission
+- `Document Type` — Law, Policy, or UNFCCC Submission (sub-types: Act, Decree, Regulation,
+  Order, Strategy, Plan, NDC, National Communication, etc.)
+- `Geography` — country or jurisdiction of origin
+- `Year` — year of enactment or submission
+- `Most Recent Update` — date of latest update to the database entry
+- `Response Areas` — Mitigation, Adaptation, Loss and Damage, Disaster Risk Management
+- `Sectors` — sector(s) covered (Energy, Transport, Buildings, Industry, Land Use,
+  Water, Finance, etc.)
+- `Topics (Beta)` — AI-detected topic tags, grouped by:
+  - `Target` — Emissions reduction target, Net-zero target
+  - `Policy Instrument` — Tax, Loan, Fees and charges, Subsidy, etc.
+  - `Risk` — Extreme weather, Sea-level rise, Drought, etc.
+  - `Impacted Group` — Women and minority genders, Indigenous peoples, etc.
+  - `Just Transition` — related sub-topics
+  - `Renewable Energy` — Solar, Wind, Hydropower, etc.
+  - `Fossil Fuel` — Moratoria, bans, divestment, etc.
+  - `Greenhouse Gas` — CO₂, Methane, etc.
+  - `Economic Sector` — Water management, Finance and insurance, Construction, etc.
+  - `Adaptation/Resilience` — Heat stress, Flooding, etc.
+- `Summary` — short human-written description of the document's scope and objectives
+- `Language` — original language of the document (with English translation available)
+
+## Potential Research Questions
+
+- How does the stringency or ambition of climate legislation correlate with emissions
+  trajectories across countries?
+- Do climate framework laws precede or follow major UNFCCC commitments (NDC submission)?
+- What is the relationship between a country's governance quality (e.g., Democracy Index,
+  Freedom House) and the scope of its climate legislation portfolio?
+
+## Merge Keys & Compatibility
+
+- Merge with **Freedom House**, **Democracy Index**, or **Fragile States Index** via
+  `iso3c`/country name + year for governance-legislation interaction analyses
+- Merge with **Climate Litigation Database** (climatecasechart.com) via country + year
+  to study the law-to-litigation pipeline
+- Combine with **World Bank WDI** or **EDGAR emissions data** via country + year for
+  policy-emissions outcome analyses
+- Link with **Academic Freedom Index** or **Silencing Science Tracker** for
+  science-policy coherence research
