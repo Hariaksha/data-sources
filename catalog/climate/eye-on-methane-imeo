@@ -1,0 +1,126 @@
+# Eye on Methane – UNEP International Methane Emissions Observatory (IMEO) Data Platform
+
+**Theme:** Climate / Methane Emissions / Environmental Monitoring / Energy / Geospatial  
+**Coverage:** Global; point-source detections across 63+ countries; all major methane-emitting sectors (oil & gas, coal, waste, agriculture, steel & metallurgical coal)  
+**Unit of observation:** Emission event / Point source / Facility / Country / Sector  
+**Temporal granularity:** Near real-time (MARS detections published 30–75 days post-detection; updated weekly); historical detections from 2021 onward  
+**Format:** Interactive web map with downloadable data (CSV, Excel, GeoJSON) and API access  
+**Access:** https://methanedata.unep.org — free, no registration required to explore; API documentation available  
+**License:** © UNEP; open access under UNEP terms of use; cite as: "IMEO Eye on Methane Data Platform, UNEP, methanedata.unep.org (accessed: Day Month Year)"  
+**Last verified:** June 2026
+
+---
+
+## Background
+
+The **Eye on Methane** platform is operated by the **International Methane Emissions Observatory (IMEO)** under the UN Environment Programme. Launched publicly at COP27 (2022), it is designed to be the global standard for open, verified methane emissions data. The platform integrates three distinct data streams — satellite-detected emission events (MARS), company-reported emissions (OGMP 2.0), and IMEO-commissioned science studies — into a single map-based interface with download and API access.[web:5][web:12]
+
+The underlying logic is a "detect, notify, respond" cycle: satellites detect large methane plumes, IMEO notifies responsible governments and companies, and the platform tracks whether responses and mitigation actions follow.[web:4][web:7]
+
+---
+
+## Three Core Data Streams
+
+### 1. Methane Alert and Response System (MARS)
+- Satellite-based detection system drawing on **12+ satellite instruments**, including ESA/EU Copernicus Sentinel-5P (TROPOMI) for global scanning and higher-resolution sensors (Sentinel-2, Landsat, DLR EnMAP, and commercial hyperspectral satellites) for source attribution[web:4][web:9]
+- Detects large, persistent methane plumes and attributes them to specific facilities where possible
+- Over **14,000 plume detections** to date, including 11,700+ high-resolution detections across 63 countries[web:9]
+- Detections published on the platform **30 days post-detection** with full associated metadata; notifications to governments and companies sent 45–75 days post-detection[web:6][web:9]
+- Each detection record includes: country, sector, potential source type (landfill, flare, abandoned well, venting shaft, etc.), source ID, coordinates, emission rate (kg CH₄/h), notification status (Y/N), and feedback received[screenshot:2][web:7]
+
+### 2. Oil and Gas Methane Partnership 2.0 (OGMP 2.0)
+- Company-reported, measurement-based methane emissions from oil and gas assets
+- Highest quality tier of industry reporting under the OGMP 2.0 framework
+- Data verified and integrated by IMEO; allows cross-checking of company disclosures against satellite detections[web:5][web:12]
+- Asset-level emissions data viewable in the platform's country and company views
+
+### 3. IMEO Methane Science Studies
+- Peer-reviewed field measurement campaigns commissioned or supported by IMEO
+- Over **34 global methane studies** yielding 20+ published papers[web:13]
+- Covers oil & gas, waste, rice cultivation, livestock, and other sectors
+- Provides independent empirical benchmarks for validating satellite and industry data
+
+---
+
+## Map Layers
+
+| Layer | Description |
+|-------|-------------|
+| **Satellite Detection Heatmap** | Global density map of persistent methane flux (kg CH₄/h); color-coded from low to high emission rate |
+| **Point Source and Plume** | Individual emission events mapped by location; color-coded by ΔCH₄ concentration (ppm) |
+| **Science Studies** | IMEO-commissioned measurement study locations |
+| **Mitigation Stories** | Case studies where MARS notifications led to documented mitigation action |
+| **Oil & Gas Sector** | Facility-level assets classified by OGMP 2.0 reporting tier (Gold Standard, Gold Standard Pathway, No Gold Standard, Non-Operated, Disclosed) |
+| **Steel & Met Coal Sector** | Mines (open and closed), steel plants, and ports; beta methane data from metallurgical coal supply chains |
+
+---
+
+## Sectors Covered
+
+- **Oil & Gas:** Production, processing, transport, and distribution assets globally
+- **Thermal Coal:** Mine venting shafts and surface facilities
+- **Metallurgical (Met) Coal:** Open and closed mines, coal transport, steel plant emissions (Steel Methane Programme — SMP)
+- **Waste:** Landfills (major source in top 50 emitters list)
+- **Agriculture:** Rice cultivation, livestock (via science studies; expanding coverage)
+
+---
+
+## Key Variables per Emission Record
+
+| Variable | Description |
+|----------|-------------|
+| Country | Country of emission source |
+| Sector | Oil & gas, waste, coal, agriculture, etc. |
+| Potential Source Type | Landfill, flare, venting shaft, abandoned well, coal mine facility, production offshore, etc. |
+| Source ID | Unique facility or event identifier (e.g., TKM_S_047) |
+| Coordinates | Latitude/longitude of the emission source |
+| Emission Rate | Estimated kg CH₄/h (persistency flux) |
+| ΔCH₄ ppm | Methane concentration enhancement above background |
+| Notification Status | Whether government/company was notified (Y/N) |
+| Feedback Received | Whether a response was received |
+| Estimated Emissions | Quantified CH₄ tonnes |
+
+---
+
+## Potential Research Questions
+
+- Do satellite-detected methane hotspots (MARS) cluster spatially with conflict-affected or politically fragile regions, suggesting reduced enforcement or infrastructure vulnerability?
+- How do OGMP 2.0 company-reported emissions compare to MARS satellite detections at the same facilities, and what explains the discrepancies?
+- Can MARS plume detection frequency and emission rates serve as an independent proxy variable for fossil fuel production activity or infrastructure quality in econometric models?
+- What is the relationship between government notification response rates and national governance quality indicators (e.g., Fragile States Index, Corruption Perceptions Index)?
+- How has the geographic distribution of top-50 methane emitters shifted between 2021 and 2026 across sectors?
+- Are MARS-detected landfill emissions spatially correlated with food insecurity, population density, or IDP (internally displaced person) concentration from Strata or ACLED data?
+
+---
+
+## Notes & Quirks
+
+- **MARS detections are not comprehensive inventories** — the system focuses on large, persistent, and confidently attributable emission events detectable by satellite. Smaller or diffuse sources (e.g., distributed agricultural emissions) are underrepresented in the point-source data.
+- **Publication lag:** Detections appear on the platform approximately 30 days post-detection; government and company notifications are sent 45–75 days post-detection. Real-time monitoring is not available to the public.
+- **Sectoral coverage is expanding:** Oil & gas has the longest and most complete record; the Steel & Met Coal sector (Steel Methane Programme) is newer and still in beta; agriculture and waste coverage continues to grow via science studies.
+- **Source type attribution varies in confidence:** Some records show "generic" source types (e.g., "Oil and gas facility (generic)") where high-resolution attribution was not possible; others are attributed to a specific facility type (flare, venting shaft, abandoned well).
+- The platform has a companion analytical tool — **Eye on Methane // Insights** — for deeper country and sector analysis beyond the map interface.
+- The **REMEDI** (Repository of Empirical Methane Emissions Data for Integration) database is accessible via the menu and aggregates cross-sector empirical measurement data for research integration.
+- Data is downloadable in **CSV, Excel, and GeoJSON**, and programmatically accessible via **API** — making it well-suited for integration into R or Python workflows.
+- For reproducible research: record the access date, filter parameters (sector, date range, country), and note that the dataset is updated weekly.
+
+---
+
+## How to Access
+
+1. **Map interface:** https://methanedata.unep.org/map — explore all layers globally; toggle between "Eye On Oil & Gas" and "Eye On All Sectors" views; click any point for full metadata
+2. **Data download:** Use the download button (bottom-left of the map) to export filtered selections as CSV, Excel, or GeoJSON
+3. **API:** Access via API documentation linked in the menu under "Access the Data → API Documentation"
+4. **Country views:** Use the "Eye On" country selector (top-left) to filter the map and statistics to a specific country
+5. **Top 50 Emitters list:** Accessible on first map load or via the layers panel — provides ranked list with source ID, country, sector, source type, coordinates, and notification status
+6. **Documentation:** Approach & Methodology, MARS explainer, and sector-specific methodologies available via the hamburger menu
+
+---
+
+## Related Datasets in This Catalog
+
+- `peace-conflict/acled.md` — ACLED conflict event coordinates can be spatially joined with MARS plume coordinates to test whether conflict proximity correlates with elevated or unaddressed methane emissions
+- `peace-conflict/strata-unep-fao.md` — Strata's environmental stress and governance layers provide country-level context for interpreting national MARS notification response rates
+- `governance/fragile-states-index.md` — Fragile States Index scores can be cross-referenced with MARS government notification response data
+- `climate/nasa-firms.md` — NASA FIRMS fire detections (flaring, burning) complement MARS oil & gas flare emission detections geographically
+- `climate/environmental-performance-index.md` — EPI's climate and energy indicators can benchmark countries' methane performance relative to their broader environmental governance scores
