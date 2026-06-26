@@ -1,12 +1,12 @@
-# Carnegie Climate Protest Tracker
+# Climate Protest Tracker
 
-**Theme:** Conflict / Climate / Political Mobilization
-**Coverage:** Global, January 2022–present
+**Theme:** Climate / Conflict / Governance
+**Coverage:** Global, 2022–present
 **Unit of observation:** Protest event
-**Temporal granularity:** Event-level (daily start dates)
-**Format:** Interactive web tracker (filterable table); no bulk download advertised
-**Access:** [https://carnegieendowment.org/features/climate-protest-tracker](https://carnegieendowment.org/features/climate-protest-tracker) — free, no registration required
-**License:** Carnegie Endowment for International Peace (non-commercial academic use implied; verify before publication)
+**Temporal granularity:** Event-level (start date recorded by day)
+**Format:** Interactive web tracker / table
+**Access:** [https://carnegieendowment.org/features/climate-protest-tracker](https://carnegieendowment.org/features/climate-protest-tracker) — free / no registration required
+**License:** Not clearly stated on the tracker page; verify Carnegie Endowment terms before redistribution
 **Last verified:** June 2026
 
 ***
@@ -15,77 +15,50 @@
 
 | Variable | Description |
 |----------|-------------|
-| `country` | Country where the protest occurred |
-| `protest_name` | Descriptive name assigned to the event |
-| `start_date` | Date the protest began (Month DD, YYYY) |
-| `peak_size` | Estimated peak attendance (exact, approximate, or range notation, e.g., `>200`, `~300,000`) |
-| `protest_target` | Category of entity or sector the protest opposed or addressed (see taxonomy below) |
-| `protest_objective` | Full free-text description of what demonstrators demanded or sought |
-
-### Protest Target Taxonomy (known values)
-
-- Fossil Fuels and Emissions
-- Mining and Mineral Resources
-- Climate Adaptation
-- Agriculture
-- *Blank* (target not categorized)
+| `country` | Country listed for the protest event |
+| `protest_name` | Event title used by the tracker |
+| `start_date` | Protest start date |
+| `peak_size` | Reported or estimated peak number of participants |
+| `protest_target` | Main issue area or sector targeted by the protest |
+| `protest_objective` | Free-text description of the protest's demands or purpose |
 
 ***
 
 ## Potential Research Questions
 
-- How has the frequency and geographic spread of climate protests changed since 2022?
-- Which protest targets (fossil fuels, mining, adaptation) mobilize the largest crowds?
-- Does protest activity cluster around international climate events (COP summits, Earth Day, Global Climate Strike)?
-- Is there a relationship between a country's carbon intensity or fossil fuel dependence and the volume of domestic climate protests?
-- How do anti-fossil fuel protests differ from anti-renewable protests (e.g., anti-wind, anti-solar) in size, geography, and stated objectives?
-- Can protest event density serve as an instrument or control variable in climate-conflict or climate-governance studies?
+- How have climate-related protest events changed across countries since 2022?
+- Which protest targets, such as fossil fuels, mining, or climate adaptation, generate the largest mobilizations?
+- Do climate protests cluster around major policy moments, disasters, or international summits?
+- How often do protests oppose extractive or energy infrastructure versus demand stronger climate action?
+- Can climate protest activity be linked to conflict dynamics, emissions profiles, or environmental governance outcomes?
 
 ***
 
 ## Notes & Quirks
 
-- **Total events as of June 2026:** 465+ results displayed in the tracker.
-- **Size notation is inconsistent:** Peak size uses a mix of exact numbers (`2,000`), approximations (`~300,000`), and inequality notation (`>200`, `>1,200`). Clean this column carefully before analysis — treat as ordinal or bin into size categories.
-- **Multi-city events:** Some events span multiple cities or countries and are tagged with `+` or `Multiple` as the country. These require special handling for country-level aggregation.
-- **Protest objective is free-text:** Rich qualitative detail, but not consistently coded. Useful for text analysis (NLP/topic modeling) or manual coding schemes.
-- **No bulk download:** Data appears only as a web table; scraping will be required to build an analysis-ready dataset. Check Carnegie's terms before scraping.
-- **Unit ambiguity:** Each row is an event, but "events" range from single-location rallies to coordinated nationwide actions on the same day — they are not always comparable in scale.
-- **Coverage start is 2022:** Not suitable for trend analyses requiring pre-2022 baselines without merging with other sources (e.g., ACLED, Mass Mobilization Project).
-- **Merge key considerations:** Country name and date are the natural join keys, but country spellings and event boundaries may not align cleanly with other datasets.
+- The tracker describes itself as a “one-stop source” for following global trends in climate policy protests since 2022.
+- The page currently displays 465 results.
+- The table supports filtering by size, year, protest objective, and protest target.
+- Protest targets visible in the tracker include categories such as Fossil Fuels and Emissions, Mining and Mineral Resources, Climate Adaptation, and Agriculture.
+- Some rows use prefixes like `+United States` or `+Multiple`, which suggests grouped, multi-location, or coordinated events that may need additional cleaning before country-level analysis.
+- `peak_size` is not fully standardized: entries include exact counts, approximations such as `~300,000`, and threshold values such as `>200`.
+- `protest_objective` is a rich free-text field and may be useful for qualitative coding, topic modeling, or supervised text classification.
+- The tracker page does not clearly advertise a bulk download option, so collection may require manual extraction or web scraping.
 
 ***
 
 ## How to Access
 
-1. Navigate to [https://carnegieendowment.org/features/climate-protest-tracker](https://carnegieendowment.org/features/climate-protest-tracker).
-2. Use the on-page filters (Size, Year, Protest Objective, Protest Target) to subset events.
-3. To obtain a machine-readable dataset, scrape the HTML table — the tracker renders as a paginated or fully-loaded table depending on browser state. Use Python (`requests` + `BeautifulSoup` or `Playwright` for JavaScript-rendered content).
-4. See `scripts/scrape-climate-protest-tracker.py` (if available) for a fetch script.
-
-### Suggested Python scraping approach
-
-```python
-from playwright.sync_api import sync_playwright
-import pandas as pd
-
-with sync_playwright() as p:
-    browser = p.chromium.launch()
-    page = browser.new_page()
-    page.goto("https://carnegieendowment.org/features/climate-protest-tracker")
-    page.wait_for_selector("table")
-    html = page.content()
-    browser.close()
-
-tables = pd.read_html(html)
-df = tables[0]  # adjust index as needed
-df.to_csv("data/climate-protest-tracker.csv", index=False)
-```
+1. Visit [https://carnegieendowment.org/features/climate-protest-tracker](https://carnegieendowment.org/features/climate-protest-tracker).
+2. Use the on-page search bar and filters for Size, Year, Protest Objective, and Protest Target.
+3. Extract the visible table manually or scrape the web page to create a structured dataset for analysis.
+4. Preserve the original text fields, especially `protest_objective`, before building coded variables.
 
 ***
 
-## Related Datasets
+## Suggested Uses
 
-- **ACLED** (`catalog/peace-conflict/acled.md`) — event-level conflict and protest data with broader thematic and temporal coverage; can be used to cross-validate or supplement.
-- **Mass Mobilization Project** — covers anti-government protest 1990–present; complements climate-specific events.
-- **Global Climate Strike data** (Fridays for Future) — specific to youth-led climate strikes, useful for cross-referencing large mobilization events.
+- Cross-national analysis of climate mobilization.
+- Event-level protest coding for climate-conflict or climate-politics research.
+- Building a merged dataset with country-year indicators such as emissions, democracy, energy dependence, or disaster exposure.
+- Creating a hand-coded typology of protest demands, targets, and repertoires.
