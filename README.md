@@ -24,7 +24,7 @@ Each dataset entry answers four questions:
 - `README.md` — master index & quick-reference table
 - `catalog/` — one `.md` file per dataset
   - `peace-conflict/` → `acled.md`, `acled-conflict-index.md`, `global-peace-index.md`, `global-terrorism-index.md`, `organized-crime-index.md`, `global-militarization-index.md`, `climate-conflict-vulnerability-index.md`, `ecosystems-for-peace-nbs-catalog.md`, `scad.md`
-  - `climate/` → `wildfire-detections.md`, `era5-wind.md`, `project-cosmos.md`, `environmental-performance-index.md`, `global-sustainable-competitiveness-index.md`, `climate-litigation.md`, `climate-protest-tracker.md`, `climate-transparency-platform.md`, `disaster-dollar-database.md`, `noaa_billion_dollar_disasters.md`, `scp-hat.md`, `un-biodiversity-lab.md`, `water-resource-vulnerability.md`, `global-marine-fisheries-catch-1950-2014.md`
+  - `climate/` → `wildfire-detections.md`, `era5-wind.md`, `project-cosmos.md`, `climameter.md`, `environmental-performance-index.md`, `global-sustainable-competitiveness-index.md`, `climate-litigation.md`, `climate-protest-tracker.md`, `climate-transparency-platform.md`, `disaster-dollar-database.md`, `noaa_billion_dollar_disasters.md`, `scp-hat.md`, `un-biodiversity-lab.md`, `water-resource-vulnerability.md`, `global-marine-fisheries-catch-1950-2014.md`
   - `governance/` → `fragile-states-index.md`, `state-resilience-index.md`, `corruption-perceptions-index.md`, `global-corruption-barometer.md`, `freedom-house.md`, `democracy-index.md`, `press-freedom-index.md`, `academic-freedom-index.md`, `demspaces.md`, `pandem.md`, `informea.md`, `silencing-science/silencing-science-tracker.md`
   - `development-wellbeing/` → `human-development-index.md`, `multidimensional-poverty-index.md`, `gender-development-index.md`, `social-institutions-gender-index.md`, `world-inequality-report.md`, `global-health-security-index.md`, `happiness-world-report.md`, `good-country-index.md`, `world-giving-index.md`, `formal-bilateral-influence-capacityindex.md`, `wealth-migration.md`, `world-bank-atlas-global-development.md`, `demscore.md`
   - `infrastructure/` → `poweroutage-us.md`
@@ -71,6 +71,7 @@ Each dataset entry answers four questions:
 | Water Resource Vulnerability Monitor | Global (~166 countries), 2000–2023 | Country-year | No | [→](catalog/climate/water-resource-vulnerability.md) |
 | Global Marine Fisheries Catch | Global, 1950–2014 | Cell-year-country-taxon | No | [→](catalog/climate/global-marine-fisheries-catch-1950-2014.md) |
 | Project Cosmos (Carbon Brief) | Global, 1990–2025 | Publication / Author / Institution | No | [→](catalog/climate/project-cosmos.md) |
+| ClimaMeter | Global, 2017–present | Extreme weather event | No | [→](catalog/climate/climameter.md) |
 
 ---
 
