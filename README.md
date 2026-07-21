@@ -23,7 +23,7 @@ Each dataset entry answers four questions:
 
 - `README.md` — master index & quick-reference table
 - `catalog/` — one `.md` file per dataset
-  - `peace-conflict/` → `acled.md`, `acled-conflict-index.md`, `global-peace-index.md`, `global-terrorism-index.md`, `organized-crime-index.md`, `global-militarization-index.md`, `climate-conflict-vulnerability-index.md`, `ecosystems-for-peace-nbs-catalog.md`, `scad.md`
+  - `peace-conflict/` → `acled.md`, `acled-conflict-index.md`, `global-peace-index.md`, `global-terrorism-index.md`, `organized-crime-index.md`, `global-militarization-index.md`, `climate-conflict-vulnerability-index.md`, `ecosystems-for-peace-nbs-catalog.md`, `scad.md`, `gdelt.md`
   - `climate/` → `wildfire-detections.md`, `era5-wind.md`, `project-cosmos.md`, `climameter.md`, `environmental-performance-index.md`, `global-sustainable-competitiveness-index.md`, `climate-litigation.md`, `climate-protest-tracker.md`, `climate-transparency-platform.md`, `disaster-dollar-database.md`, `noaa_billion_dollar_disasters.md`, `scp-hat.md`, `un-biodiversity-lab.md`, `water-resource-vulnerability.md`, `global-marine-fisheries-catch-1950-2014.md`
   - `governance/` → `fragile-states-index.md`, `state-resilience-index.md`, `corruption-perceptions-index.md`, `global-corruption-barometer.md`, `freedom-house.md`, `democracy-index.md`, `press-freedom-index.md`, `academic-freedom-index.md`, `demspaces.md`, `pandem.md`, `informea.md`, `silencing-science/silencing-science-tracker.md`
   - `development-wellbeing/` → `human-development-index.md`, `wid-world.md`, `multidimensional-poverty-index.md`, `gender-development-index.md`, `social-institutions-gender-index.md`, `world-inequality-report.md`, `global-health-security-index.md`, `happiness-world-report.md`, `good-country-index.md`, `world-giving-index.md`, `formal-bilateral-influence-capacityindex.md`, `wealth-migration.md`, `world-bank-atlas-global-development.md`, `demscore.md`, `marketplace-activity-index.md`, `hungermap-live.md`
@@ -50,6 +50,7 @@ Each dataset entry answers four questions:
 | Climate Conflict Vulnerability Index | Global, cross-sectional | Country | No | [→](catalog/peace-conflict/climate-conflict-vulnerability-index.md) |
 | Ecosystems for Peace – NbS Catalog | Global, 2024–present | Project/intervention | No | [→](catalog/peace-conflict/ecosystems-for-peace-nbs-catalog.md) |
 | SCAD (Social Conflict Analysis Database) | Africa + LAC, 1990–2017 | Event-level | No | [→](catalog/peace-conflict/scad.md) |
+| GDELT (Global Database of Events, Language, and Tone) | Global, 1979–present (real-time since 2015) | Event-level | No | [→](catalog/peace-conflict/gdelt.md) |
 
 ---
 
