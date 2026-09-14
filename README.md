@@ -25,7 +25,7 @@ Each dataset entry answers four questions:
 - `catalog/` — one `.md` file per dataset
   - `peace-conflict/` → `acled.md`, `acled-conflict-index.md`, `global-peace-index.md`, `global-terrorism-index.md`, `organized-crime-index.md`, `global-militarization-index.md`, `climate-conflict-vulnerability-index.md`, `ecosystems-for-peace-nbs-catalog.md`, `scad.md`, `gdelt.md`
   - `climate/` → `wildfire-detections.md`, `era5-wind.md`, `project-cosmos.md`, `climameter.md`, `environmental-performance-index.md`, `global-sustainable-competitiveness-index.md`, `climate-litigation.md`, `climate-protest-tracker.md`, `climate-transparency-platform.md`, `disaster-dollar-database.md`, `noaa_billion_dollar_disasters.md`, `scp-hat.md`, `un-biodiversity-lab.md`, `water-resource-vulnerability.md`, `global-marine-fisheries-catch-1950-2014.md`, `net-zero-tracker.md`, `planet-labs.md`, `tree-equity-score.md`, `google-heat-resilience.md`
-  - `governance/` → `fragile-states-index.md`, `state-resilience-index.md`, `corruption-perceptions-index.md`, `global-corruption-barometer.md`, `freedom-house.md`, `democracy-index.md`, `press-freedom-index.md`, `academic-freedom-index.md`, `demspaces.md`, `pandem.md`, `informea.md`, `silencing-science/silencing-science-tracker.md`, `usafacts.md`, `deportation-data-project.md`
+  - `governance/` → `fragile-states-index.md`, `state-resilience-index.md`, `corruption-perceptions-index.md`, `global-corruption-barometer.md`, `freedom-house.md`, `democracy-index.md`, `press-freedom-index.md`, `academic-freedom-index.md`, `demspaces.md`, `pandem.md`, `informea.md`, `silencing-science/silencing-science-tracker.md`, `usafacts.md`, `deportation-data-project.md`, `afrobarometer.md`
   - `development-wellbeing/` → `human-development-index.md`, `wid-world.md`, `multidimensional-poverty-index.md`, `gender-development-index.md`, `social-institutions-gender-index.md`, `world-inequality-report.md`, `global-health-security-index.md`, `happiness-world-report.md`, `good-country-index.md`, `world-giving-index.md`, `formal-bilateral-influence-capacityindex.md`, `wealth-migration.md`, `world-bank-atlas-global-development.md`, `demscore.md`, `marketplace-activity-index.md`, `hungermap-live.md`
   - `infrastructure/` → `poweroutage-us.md`, `hot-osm-hdx.md`
   - `reference/` — language and country reference files
@@ -98,6 +98,7 @@ Each dataset entry answers four questions:
 | Silencing Science Tracker | US, Nov 2016–present | Incident | Yes (CSV) | [→](catalog/governance/silencing-science/silencing-science-tracker.md) |
 | USAFacts | US (50 states, 3,000+ counties) | Varies (national/state/county) | No | [→](catalog/governance/usafacts.md) |
 | Deportation Data Project | US, 2007–present (EOIR back to 1970s) | Individual-level record | No | [→](catalog/governance/deportation-data-project.md) |
+| Afrobarometer | 39 African countries, 1999–present (rounds every 2–3 years) | Individual survey respondent | No | [→](catalog/governance/afrobarometer.md) |
 
 ---
 
