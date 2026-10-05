@@ -29,6 +29,7 @@ Each dataset entry answers four questions:
   - `development-wellbeing/` → `human-development-index.md`, `wid-world.md`, `multidimensional-poverty-index.md`, `gender-development-index.md`, `social-institutions-gender-index.md`, `world-inequality-report.md`, `global-health-security-index.md`, `happiness-world-report.md`, `good-country-index.md`, `world-giving-index.md`, `formal-bilateral-influence-capacityindex.md`, `wealth-migration.md`, `world-bank-atlas-global-development.md`, `demscore.md`, `marketplace-activity-index.md`, `hungermap-live.md`, `world-bank-data360.md`, `godad.md`, `global-innovation-index.md`, `sustainable-development-report.md`
   - `infrastructure/` → `poweroutage-us.md`, `hot-osm-hdx.md`
   - `reference/` — language and country reference files
+- `research-tools/` → `scientific-writing-bushman.pdf`, `ai-research-prompts.md`, `terminal-bench-science.md`
 
 > **Note on data storage:** Raw files (`.csv`, `.dta`, `.xlsx`) are intentionally **not** committed here unless tiny. Large files are excluded via `.gitignore`. The value of this repo is the metadata, not the data itself.
 > **Note on data storage:** Raw files (`.csv`, `.dta`, `.xlsx`) are intentionally **not** committed here unless tiny. Large files are excluded via `.gitignore`. The value of this repo is the metadata, not the data itself.
