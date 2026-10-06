@@ -23,7 +23,7 @@ Each dataset entry answers four questions:
 
 - `README.md` — master index & quick-reference table
 - `catalog/` — one `.md` file per dataset
-  - `peace-conflict/` → `acled.md`, `acled-conflict-index.md`, `global-peace-index.md`, `global-terrorism-index.md`, `organized-crime-index.md`, `global-militarization-index.md`, `climate-conflict-vulnerability-index.md`, `ecosystems-for-peace-nbs-catalog.md`, `scad.md`, `gdelt.md`, `assembly-for-peace.md`, `ucdp.md`, `correlates-of-war.md`
+  - `peace-conflict/` → `acled.md`, `acled-conflict-index.md`, `global-peace-index.md`, `global-terrorism-index.md`, `organized-crime-index.md`, `global-militarization-index.md`, `climate-conflict-vulnerability-index.md`, `ecosystems-for-peace-nbs-catalog.md`, `scad.md`, `gdelt.md`, `assembly-for-peace.md`, `ucdp.md`, `correlates-of-war.md`, `water-conflict-chronology.md`
   - `climate/` → `wildfire-detections.md`, `era5-wind.md`, `project-cosmos.md`, `climameter.md`, `environmental-performance-index.md`, `global-sustainable-competitiveness-index.md`, `climate-litigation.md`, `climate-protest-tracker.md`, `climate-transparency-platform.md`, `disaster-dollar-database.md`, `noaa_billion_dollar_disasters.md`, `scp-hat.md`, `un-biodiversity-lab.md`, `water-resource-vulnerability.md`, `global-marine-fisheries-catch-1950-2014.md`, `net-zero-tracker.md`, `planet-labs.md`, `tree-equity-score.md`, `google-heat-resilience.md`
   - `governance/` → `fragile-states-index.md`, `state-resilience-index.md`, `corruption-perceptions-index.md`, `global-corruption-barometer.md`, `freedom-house.md`, `democracy-index.md`, `press-freedom-index.md`, `academic-freedom-index.md`, `demspaces.md`, `pandem.md`, `informea.md`, `silencing-science/silencing-science-tracker.md`, `usafacts.md`, `deportation-data-project.md`, `afrobarometer.md`
   - `development-wellbeing/` → `human-development-index.md`, `wid-world.md`, `multidimensional-poverty-index.md`, `gender-development-index.md`, `social-institutions-gender-index.md`, `world-inequality-report.md`, `global-health-security-index.md`, `happiness-world-report.md`, `good-country-index.md`, `world-giving-index.md`, `formal-bilateral-influence-capacityindex.md`, `wealth-migration.md`, `world-bank-atlas-global-development.md`, `demscore.md`, `marketplace-activity-index.md`, `hungermap-live.md`, `world-bank-data360.md`, `godad.md`, `global-innovation-index.md`, `sustainable-development-report.md`
@@ -55,6 +55,7 @@ Each dataset entry answers four questions:
 | Assembly for Peace (UNU-CPR) | UN General Assembly practice, 1950–present | Case study (qualitative) | No | [→](catalog/peace-conflict/assembly-for-peace.md) |
 | UCDP (Uppsala Conflict Data Program) | Global, 1946–present (GED events 1989–present) | Conflict-year; event-level (GED) | No | [→](catalog/peace-conflict/ucdp.md) |
 | Correlates of War | Global, 1816–present (end years vary) | Country-year / dyad-year | No | [→](catalog/peace-conflict/correlates-of-war.md) |
+| Water Conflict Chronology (Pacific Institute) | Global, ancient–present (mostly post-2000); 2,750+ incidents | Incident | No | [→](catalog/peace-conflict/water-conflict-chronology.md) |
 
 ---
 
